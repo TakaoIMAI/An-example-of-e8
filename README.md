@@ -1,6 +1,7 @@
 # Digitalization of exceptional simple Lie algebras
  We publish (1)the digitalized 248 bases of the 248x248 matrix of r8C by using Maxima's function: matrix. 
 These digitalized matrices are the result of the following Paper:
+
 Digitalization of exceptional simple Lie algebras into matrices over complex numbers
 (arXiv:2010.06696v2 [math.RT] 27 Apr 2021)
 
