@@ -9,7 +9,7 @@ Digitalization of exceptional simple Lie algebras into matrices over complex num
 Computer algebra systems are useful for explicitly calculating high-dimensional Lie algebras.
 
  We prepared the following programming codes(2),(3),(4),(5), and (6). 
-So readers can find these digitalized data are useful. With these programming codes readers can simulate the process of digitalization and verify the proof
+So the above paper's readers can find these digitalized data are useful. With these programming codes readers can simulate the process of digitalization and verify the proof
 of this paper:
 
 (2)Operations (see Section 1 ) of the Cayley algebra and the Jordan algebra by using Maxima.
