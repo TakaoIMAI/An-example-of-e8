@@ -1,10 +1,12 @@
 Example Programs.zip
-(1) Description_of_contents.txt is this file.
+(1) Description_of_contents.mac is this file.
 (2) DEF (see 1).
 (3) Lie_bracket_operation_and_root_system (see 2).
 (4) Operations_and_Converter (see 3).
 (5) Decompose_into_248_basis_matrices (see 4).
 (6) element_C.txt and element_F.txt (see 5).
+(7) Lie_algebra_f4_e6_g2_define (see 6)
+(8) Some Lie subalgebras of r8C (see 7-12)
 Take a good look at the programming codes and use them at your own risk.
 
 1. 'DEF'
@@ -16,46 +18,47 @@ There are 248 *.mac files, which are 248 basis matrices defined in Maxima.
  Save the DEF folder to a location as you like.
 
 2. 'Lie_bracket_operation_and_root_system'
-   Lie_bracket_operation_and_root_system/wxMaxima/*.txt
+   Lie_bracket_operation_and_root_system/wxMaxima/*.mac
 2.1 contents
 Program for checking Lie bracket operations and confirming root systems.
 There are 9 files.
- 248_basis_matrices_load.txt is a program for loading 248 basis matrices.
- r8C_independent.txt is a program to check that 248 basis matrices are independent.
- r4C_bracket_root_operation.txt is a program for r4C,
+ 248_basis_matrices_load.mac is a program for loading 248 basis matrices.
+ r8C_independent.mac is a program to check that 248 basis matrices are independent.
+ r4C_bracket_root_operation.mac is a program for r4C,
       which checks Lie bracket operations and root system.
       The upper left 52 × 52 elements are taken from the 248 × 248 matrix.
- r6C_bracket_root_operation.txt is a program for r6C.
+ r6C_bracket_root_operation.mac is a program for r6C.
       The upper left 78 × 78 elements are taken from the 248 × 248 matrix.
       Also check R4C(78 x 78) in r6C.
- r7C_bracket_root_operation.txt is a program for r7C.
+ r7C_bracket_root_operation.mac is a program for r7C.
       The upper left 133 × 133 elements are taken from the 248 × 248 matrix.
       Also check R4C(133 x 133) in r7C and r6C(133 x 133) in r7C.
- r8C_bracket_root_operation.txt is a program for R8C.
+ r8C_bracket_root_operation.mac is a program for R8C.
       Also checks r4C (248 x 248) in r8C,r6C (248 x 248) in r8C and 
       r7C (248 x 248) in r8C.
- e8e7e6f4_compact_element_definition .txt is a program for 
+ e8e7e6f4_compact_element_definition .mac is a program for 
     compact Lie algebra definition and Killing form calculation.
- r2C_bracket_root_operation (e8c).txt is a program of r2C.
- r2C_bracket_root_operation.txt is a program checks r2C(28 x 28).
-       The upper left 28 × 28 elements are taken from the 248 × 248 matrix.
+ r2C_bracket_root_operation (e8c).mac is a program of r2C.
+ r2C_bracket_root_operation.mac is a program checks r2C(28 x 28).
+       The upper left 28 × 28 elements are taken from the 248 × 248 matrix.  
 2.2 How to use
 (1)Change the location where the DEF folder is stored and the check 
-result storage folder at the beginning of 248_basis_matrices_load.txt.
-(2)Copy and paste the contents of the *.txt file into Maxima.
-(3)Select Evalute Cell(s) from Cell menu.  
+result storage folder.
+(2)Load or copy & paste the contents of 248_basis_matrices_load.mac ffile into Maxima.
+(3)Copy & paste the contents of the *.mac file into Maxima.
+(4)Select Evalute Cell(s) from Cell menu.  
 2.3 Usage example
 In case of R6C
    1st: Start wxMaxima
-   2nd: Copy & paste 248_basis_matrices_load.txt
+   2nd: Copy & paste 248_basis_matrices_load.mac
    3rd: Evalute Cell(s)
-   4th: Copy & paste R6C_bracket_root_operation.txt
+   4th: Copy & paste R6C_bracket_root_operation.mac
    5th: Evalute Cell(s)
 Before executing r4C, r6C, r7C, r8C, and e8e7e6f4_compact, 
-you must copy & paste and Evalute Cell(s) of 248_basis_matrices_load.txt. 
+you must copy & paste and Evalute Cell(s) of 248_basis_matrices_load.mac. 
 2.4 Remark
-Running R7C_bracket_root_operation.txt takes about 1 hour.
-Running R8C_bracket_root_operation.txt takes several hours.
+Running R7C_bracket_root_operation.mac takes about 1 hour.
+Running R8C_bracket_root_operation.mac takes several hours.
 
 3. 'Operations_and_Converter'
    Operations_and_Converter/Ade8c/*.py
@@ -71,16 +74,16 @@ Operation_and_data_flow.pdf shows operation and data flow of wxMaxima and Python
 Please operate according to Operation_and_data_flow.pdf.
 
 4.Decompose_into_248_basis_matrices'
-  Decompose_into_248_basis_matrices/wxMaxima/Dcomp.txt
+  Decompose_into_248_basis_matrices/wxMaxima/Dcomp.mac
 4.1 content
 Decompose an element of r8C into a linear combination of the 248 basis matrices.
 The following are the symbols of the basis matrices.
    Urdij,Urmij,Urτi,Urtij,Urαi,Uraij,Urβi,Urbij,Urρ1,
    Urχi,Urxij,Urγi,Uryij,Urξ1,Urη1,Urμi,Urzij,Urψi,Urwij,
    Urζ1,Urω1,Urr1,Urs1,Uru1 where i and j are indexes.
- Decomp.txt is a macro program
+ Decomp.mac is a macro program
 4.2 How to use
- Copy and paste the contents of Decomp.txt file into Maxima.
+Copy and paste the contents of Decomp.mac file into Maxima.
 4.3 usage example  
 Substitute a Lie bracket calculation result in R.
 R:X.Y-Y.X$
@@ -89,17 +92,41 @@ Dcomp();
 5. element_C.txt and element_F.txt
 basis symboles of a matrix R8C 
 
-6. Su3bracketcal.txt
+6.Lie_algebra_f4_e6_g2_define 
+  Lie_algebra_f4_e6_g2_define/wxMaxima/*.mac
+  Lie_algebra_f4_e6_g2_define/E6mat/*.mat
+6.1 contents
+ f4_Liealgebra.mac is the digitalization of f4 into 27 X 27 matrices.
+ e6_Liealgebra.mac is the digitalization of e6 into 27 X 27 matrices.
+ g2_Liealgebra.mac is the digitalization of g2 into 8 X 8 matrices.
+ f4_bracket_operation.mac is a bracket operation check program.
+ e6_bracket_operation.mac is a bracket operation check program.
+ g2_bracket_operation.mac is a bracket operation check program.
+ f4_definition_check.mac is a program that checks the definition of f4, checks the orthogonal bases, and checks the transpose with the inner product.
+ e6_definition_check.mac s a program that checks the definition of e6 and checks the orthogonal bases. 
+ g2_definition_check.mac is a definition of g2 check program.
+ matrices_of_E6_load.mac is a Lie group E6 elements load program.
+ F4_definition_check.mac is a program that checks whether the elements of F4 satisfy the definition of F4. 
+ E6_definition_check.mac is a program that checks whether the elements of E6 satisfy the definition of E6.
+ E6mat/*.mat are exponential matrices of the basis of the Lie algebra e6. 
+
+6.2 How to use
+Copy and paste the contents of ******.mac file into Maxima.
+
+7. Su3bracketcal.mac
 This is a programming code that checks Lie bracket calculations of Rsu(3).
 
-7. Sp3bracketcal.txt
+8. Sp3bracketcal.mac
 This is a programming code that checks Lie bracket calculations of Rsp1(3) and Rsp2(3).
 
-8. So9bracketcal.txt
+9. So9bracketcal.mac
 This is a programming code that checks Lie bracket calculations of Rso(9).
 
-9. So10bracketcal.txt
+10. So10bracketcal.mac
 This is a programming code that checks Lie bracket calculations of Rso(10).
 
-10. Su6bracketcal.txt
+11. Su6bracketcal.mac
 This is a programming code that checks Lie bracket calculations of Rsu(6).
+
+12. Sp4bracketcal.mac
+This is a programming code that checks Lie bracket calculations of Rsp(4).
