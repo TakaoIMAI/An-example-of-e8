@@ -10,10 +10,16 @@ Computer algebra systems are useful for explicitly calculating high-dimensional 
 
 The programming codes have following 6 contens. With the programming codes,
 readers can simulate the process of digitalization and verify the proof of this paper.
+
 (1)Operations (see Section 1 ) of the Cayley algebra and the Jordan algebra by using Maxima.
+
 (2)Lie bracket operations of R4, R6, R7, and R8 by using Maxima.
+
 (3)Convertes from ad(R8C) over the Cayley algebra to the matrix of r8C , by using Maxima for performing mathematical operation and using the programming
 language Python for string conversion.
+
 (4)Check the Lie bracket operations as matrix calculations of r4C , r6C , r7C , and r8C and confrming these root systems.
+
 (5)Decompose an element of r8C into a linear combination of the 248 bases matrices.
+
 (6)Check the Lie bracket operations of Lie subalgebras of r8C
