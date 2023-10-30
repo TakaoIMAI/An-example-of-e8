@@ -4,7 +4,7 @@ Example Programs.zip
 (3) Lie_bracket_operation_and_root_system (see 2).
 (4) Operations_and_Converter (see 3).
 (5) Decompose_into_248_basis_matrices (see 4).
-(6) element_C.txt and element_F.txt (see 5).
+(6) Relement.txt, element_C.txt and element_F.txt (see 5).
 (7) Lie_algebra_f4_e6_g2_define (see 6)
 (8) Some Lie subalgebras of r8C (see 7-12)
 Take a good look at the programming codes and use them at your own risk.
@@ -89,8 +89,9 @@ Substitute a Lie bracket calculation result in R.
 R:X.Y-Y.X$
 Dcomp();
 
-5. element_C.txt and element_F.txt
-basis symboles of a matrix R8C 
+5. Relement.txt, element_C.txt and element_F.txt
+Relement.txtx is a symbol lists of the vector space R8C.
+element_C.txt and element_F.txt are basis symboles of a matrix R8C. 
 
 6.Lie_algebra_f4_e6_g2_define 
   Lie_algebra_f4_e6_g2_define/wxMaxima/*.mac
