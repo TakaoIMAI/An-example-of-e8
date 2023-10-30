@@ -23,3 +23,8 @@ language Python for string conversion.
 (5)Decompose an element of r8C into a linear combination of the 248 bases matrices.
 
 (6)Check the Lie bracket operations of Lie subalgebras of r8C
+
+# Verup 2023/10/30
+Fixed the incorrect maximum_tempdir in ../Operation_and_Converter/wxMaxima/1st_step.mac and 2nd_step.mac.
+An error occurred because there was no Relement.txt file in ../Operation_and_Converter/wxMaxima/elements def.mac. Prepared Relement.txt. 
+Also fixed the incorrect stfile and tempdir settings in elements_def.mac.
